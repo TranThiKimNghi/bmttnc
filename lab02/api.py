@@ -106,7 +106,7 @@ def transposition_encrypt():
     encrypted_text = transposition_cipher.encrypt(plain_text, key)
     return jsonify({'encrypted_text': encrypted_text})
 
-@app.route('/api/transposition/encrypt', methods=['POST'])
+@app.route('/api/transposition/decrypt', methods=['POST'])
 def transposition_decrypt():
     data = request.get_json()
     cipher_text = data.get('cipher_text')

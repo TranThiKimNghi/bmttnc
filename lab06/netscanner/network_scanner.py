@@ -24,7 +24,7 @@ def get_vendor_by_mac(mac):
         return "Unknown Vendor"
     
 def main():
-    ip_range = "192.168.8.1/24"
+    ip_range = "192.168.1.1/24"
 
     devices = local_network_scan(ip_range)
     
